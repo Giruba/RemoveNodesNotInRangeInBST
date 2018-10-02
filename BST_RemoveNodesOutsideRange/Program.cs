@@ -6,7 +6,14 @@ namespace BST_RemoveNodesOutsideRange
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Remove nodes in a BST that are not in the given range!");
+            Console.WriteLine("--------------------------------------------------------");
+
+            ProcessInput processInput = new ProcessInput();
+            BST bstRoot = processInput.ConstructBST();
+            processInput.GetProcessedBST(bstRoot);
+
+            Console.ReadKey();
         }
     }
 }
